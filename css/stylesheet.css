@@ -1,0 +1,271 @@
+/* ===================================================================================================================== */
+/* section-0: header-design */
+
+.header {
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(0, 0, 255, 0.5);
+    overflow: auto;
+    padding: 0 150px;
+    position: fixed;
+    z-index: 3;
+}
+.header_logo {
+    width: 100px;
+    height: 100%;
+}
+.header_list {
+    float: right;
+    margin-top: 20px;
+}
+.header_list li {
+    display: inline-block;
+    margin-left: 40px;
+}
+.header_list li a , .header_list_home_link { color: white }
+.header_list li a:hover , .header_list_home_link { text-decoration: underline }
+
+/* ===================================================================================================================== */
+/* section-1: home design */
+
+.home {
+    height: 100vh;
+    background-image: url(../images/home_background.jpg);
+    position: relative;
+}
+.home_overlay { background-color: rgba(0, 0, 0, 0.8) }
+.home_main_title {
+    text-transform: uppercase;
+    font-size: 54px;
+}
+.home_description { 
+    font-weight: 100;
+    margin-bottom: 10px 
+}
+.home_right_button { background-color: blue }
+.home_main_title , .home_description , .home_right_button a { color: white }
+
+/* ===================================================================================================================== */
+/* section-2: intro design */
+
+.intro_items { height: 40vh }
+.intro_items_content { padding-top: 5px }
+.intro_items i , .intro_items h2 , .intro_items p { margin-bottom: 20px }
+
+/* ===================================================================================================================== */
+/* section-3: jobs Design */
+
+.jobs_items { 
+    height: 35vh;
+    padding-top: 5vh;
+    background-color: inherit;
+}
+.jobs_items img { 
+    width: 80%;
+    height: 25vh;
+}
+.items_overlay h2 , .items_overlay p { margin-bottom: 10px }
+.items_overlay p { 
+    font-size: 24px ;
+    text-transform: capitalize;
+}
+
+/* ===================================================================================================================== */
+/* section-4: companies design */
+
+.companies {
+    background: url(../images/moving_background.png) fixed;
+    background-size: cover;
+}
+.companies_items { 
+    height: 40vh; 
+    padding: 25px;
+    background-color: rgb(192, 192, 192, 0.9);
+    text-align: left;
+}
+.companies_items_logo { 
+    overflow: auto; 
+    margin-bottom: 20px; 
+}
+.companies_items_logo img {
+    float: left;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin: 5px 10px auto auto;
+}
+.companies_items_logo_info { float: left }
+
+/* ===================================================================================================================== */
+/* section-5: roadmap design */
+
+.roadmap_items { height: 30vh }
+.roadmap_items i {
+    position: absolute;
+    left: 0;
+}
+.roadmap_items_text {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-left: 10px;
+}
+.roadmap_items_text h2 { margin-bottom: 10px }
+
+/* ===================================================================================================================== */
+/* section-6: comment design */
+
+.comment_info {
+    width: 50%;
+    height: 40vh;
+    text-align: left;
+}
+.comment_info h2 { margin-bottom: 10px }
+.comment_info_option { 
+    overflow: auto;
+    height: 30px;
+    margin-bottom: 5px;
+    padding-top: 3px;
+}
+.comment_info_circles {
+    float: left;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    border: 1px solid purple;
+    margin-right: 10px;
+    text-align: center;
+}
+.comment_info_circles i { 
+    font-size: 16px; 
+    line-height: 24px; 
+}
+.comment_logo {
+    float: right;
+    width: 45%;
+    height: 40vh;
+}
+.comment_logo img { 
+    width: 100%; 
+    margin-bottom: 8px;
+}
+.comment_logo_circles_container {
+    width: 60px;
+    margin: auto;
+    overflow: auto;
+}
+.comment_logo_circles {
+    float: left;
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    border: 1px solid purple;
+}
+.comment_logo_first_circle { background-color: rgb(128, 0, 128, 0.7); }
+.comment_logo_middle_circle { margin: 0 3px }
+
+/* ===================================================================================================================== */
+/* section-7: statistics design */
+
+.statistics { 
+    height: 40vh;
+    background: url(../images/moving_background.png) fixed;
+    background-size: cover;
+    padding-top: 10vh;
+}
+.statistics_container { 
+    background-color: rgba(70, 105, 70, 0.5);
+    border-radius: 10px;
+}
+.statistics_items {
+    width: 25%;
+    height: 20vh;
+}
+.statistics_items , .statistics_items i { color: white }
+
+/* ===================================================================================================================== */
+/* section-8: salaries design */
+
+.salaries_items { height: 75vh }
+.salaries_circles {
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;
+    margin: 30px auto;
+    background-color: whitesmoke;
+    padding-top: 30px;
+}
+.salaries_values { font-size: 54px; }
+.salaries_items p {  margin-bottom: 20px }
+.salaries_items button { margin-top: 20px;}
+.salaries_items p { margin-bottom: 10px; padding-top: 0;}
+h3 { font-size: 36px; margin-bottom: 30px; }
+.salaries_items:hover .salaries_circles , .salaries_items:hover .salaries_buttons { background-color: rgb(155, 155, 155, 0.5) }
+
+/* ===================================================================================================================== */
+/* section-9: tracks design */
+
+.tracks_items { height: 50vh }
+.tracks_items_logo {
+    margin-bottom: 5%;
+    position: relative;
+}
+.tracks_items_logo img { 
+    width: 100%;
+    height: 190px;
+}
+.tracks_items a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    text-align: center;
+}
+.tracks_items a i { line-height: 40px }
+
+/* ===================================================================================================================== */
+/* section-10: resources design */
+
+.resources_items {
+    height: 110vh;
+    text-align: left;
+}
+.resources_items_logo { margin-bottom: 10px }
+.resources_items_logo img { 
+    width: 100%;
+    height: 250px;
+}
+.important_text { margin: 20px auto }
+.resources_items_info p { margin-bottom: 20px }
+.resources_items span { 
+    font-size: 14px; 
+    margin-right: 5px; 
+}
+.resources_items i { 
+    font-size: 18px; 
+    margin-right: 5px; 
+}
+
+/* ===================================================================================================================== */
+/* section-11: footer design */
+
+.footer { background-color: rgb(140, 40, 240, 0.3) }
+.footer img { 
+    width: 150px;
+    height: 100px; 
+    margin-bottom: 10px;
+}
+.footer_icons a { 
+    display: inline-block;
+    width: 30px; 
+    height: 30px; 
+    border-radius: 15px;
+    border: 1px solid rgb(140, 40, 240, 0.3);
+    margin-right: 15px;
+}
+.footer a i { 
+    font-size: 21px; 
+    line-height: 30px;
+    color: rgb(140, 40, 240, 0.9);
+}
+
